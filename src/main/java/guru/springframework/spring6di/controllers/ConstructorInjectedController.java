@@ -4,7 +4,9 @@ package guru.springframework.spring6di.controllers;
 
 import guru.springframework.spring6di.services.GreetingService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
 
+@Controller
 @RequiredArgsConstructor
 public class ConstructorInjectedController {
     private final GreetingService greetingService;
